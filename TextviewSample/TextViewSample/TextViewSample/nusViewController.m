@@ -15,6 +15,12 @@
 @end
 
 @implementation nusViewController
+- (IBAction)btnAdd:(UIButton *)sender {
+    
+}
+- (IBAction)btnRemove:(UIButton *)sender {
+    
+}
 
 - (void)viewDidLoad
 {

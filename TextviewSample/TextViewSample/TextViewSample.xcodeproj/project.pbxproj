@@ -21,6 +21,7 @@
 		68CD3D1319BED58900ACD705 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CD3CF519BED58900ACD705 /* UIKit.framework */; };
 		68CD3D1B19BED58900ACD705 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CD3D1919BED58900ACD705 /* InfoPlist.strings */; };
 		68CD3D1D19BED58900ACD705 /* TextViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CD3D1C19BED58900ACD705 /* TextViewSampleTests.m */; };
+		68CD3D2B19BEEAB500ACD705 /* nusData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CD3D2A19BEEAB500ACD705 /* nusData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		68CD3D1819BED58900ACD705 /* TextViewSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextViewSampleTests-Info.plist"; sourceTree = "<group>"; };
 		68CD3D1A19BED58900ACD705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68CD3D1C19BED58900ACD705 /* TextViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewSampleTests.m; sourceTree = "<group>"; };
+		68CD3D2919BEEAB500ACD705 /* nusData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nusData.h; sourceTree = "<group>"; };
+		68CD3D2A19BEEAB500ACD705 /* nusData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nusData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 				68CD3D0719BED58900ACD705 /* nusViewController.m */,
 				68CD3D0919BED58900ACD705 /* Images.xcassets */,
 				68CD3CF819BED58900ACD705 /* Supporting Files */,
+				68CD3D2C19BEEABF00ACD705 /* Data */,
 			);
 			path = TextViewSample;
 			sourceTree = "<group>";
@@ -150,6 +154,15 @@
 				68CD3D1919BED58900ACD705 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68CD3D2C19BEEABF00ACD705 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68CD3D2919BEEAB500ACD705 /* nusData.h */,
+				68CD3D2A19BEEAB500ACD705 /* nusData.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CD3D2B19BEEAB500ACD705 /* nusData.m in Sources */,
 				68CD3CFE19BED58900ACD705 /* main.m in Sources */,
 				68CD3D0819BED58900ACD705 /* nusViewController.m in Sources */,
 				68CD3D0219BED58900ACD705 /* nusAppDelegate.m in Sources */,
