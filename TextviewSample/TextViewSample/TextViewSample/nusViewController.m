@@ -17,11 +17,14 @@
 
 @implementation nusViewController
 - (IBAction)btnAdd:(UIButton *)sender {
+    
+    
     nusData *objectName= [[nusData alloc]init];
+    [objectName createAnArray];
     [objectName insertAaValueIntoArray:@"Inserted"];
     
-    
-
+    // return the updated values and update the UI
+    [self.textview setText:[objectName returnAllValues]];
 }
 - (IBAction)btnRemove:(UIButton *)sender {
     
@@ -43,7 +46,7 @@
     [mymutablearray insertObject:@"Prasanna Car2" atIndex:0];
     [mymutablearray insertObject:@"Prasanna Car3" atIndex:0];
     
-    [mymutablearray removeObjectAtIndex:9];
+
     
    NSMutableString *temp = [NSMutableString stringWithString:@""];
     for (int i = 0; i < [mymutablearray count]; i++)
