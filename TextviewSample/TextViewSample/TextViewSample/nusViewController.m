@@ -7,6 +7,7 @@
 //
 
 #import "nusViewController.h"
+#import "nusData.h"
 
 @interface nusViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -16,7 +17,11 @@
 
 @implementation nusViewController
 - (IBAction)btnAdd:(UIButton *)sender {
+    nusData *objectName= [[nusData alloc]init];
+    [objectName insertAaValueIntoArray:@"Inserted"];
     
+    
+
 }
 - (IBAction)btnRemove:(UIButton *)sender {
     
@@ -34,13 +39,17 @@
                                   @"Audi TT",
                                   nil];
     
-    [mymutablearray insertObject:@"Prasanna Car" atIndex:3];
+    [mymutablearray insertObject:@"Prasanna Car1" atIndex:0];
+    [mymutablearray insertObject:@"Prasanna Car2" atIndex:0];
+    [mymutablearray insertObject:@"Prasanna Car3" atIndex:0];
+    
+    [mymutablearray removeObjectAtIndex:9];
     
    NSMutableString *temp = [NSMutableString stringWithString:@""];
     for (int i = 0; i < [mymutablearray count]; i++)
     {
         
-        NSLog([mymutablearray objectAtIndex:i]);
+       // NSLog([mymutablearray objectAtIndex:i]);
         
         [temp appendString:[mymutablearray objectAtIndex:i]];
         [temp appendString:@" \n"];
