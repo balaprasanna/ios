@@ -13,7 +13,7 @@
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        Nslog(@"am the first");
+       // Nslog(@"am the first");
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([nusAppDelegate class]));
     }
 }
