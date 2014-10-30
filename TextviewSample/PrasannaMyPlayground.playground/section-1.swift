@@ -1,3 +1,8 @@
+// Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
 println("Hello, world!")
 var a=10
 var implicitInt=100
@@ -23,15 +28,21 @@ let fruitSummary="i have \(count) \(stringA) "
 println("\n \t \(fruitSummary)")
 
 let myArray=["one","two","three","four"]
-let myArray2D=[[1,2,3,4,5],[4,5,6,7,8]]
+let myArray2D=[[1,2,3,4,7],[4,5,6,7,8]]
 println(myArray[1])
 myArray.count
 println(myArray[0])
 var sum=0
+var bigNum=0
 for a in myArray2D{
     for aSub in a{
+        if(aSub>bigNum){
+           bigNum=aSub
+        }
         sum=sum+aSub
     }
-    println(" \(a) count value is\(a.count) and total value \(sum)")
+    println(" \(a) count value is\(a.count) and total value \(sum) and the Biggest Number is \(bigNum)")
 }
 
+
+var i=10
