@@ -405,6 +405,7 @@
 				683ED20D1A4F0F430042BC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		683ED20E1A4F0F430042BC95 /* Build configuration list for PBXNativeTarget "Bala hello worldTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				683ED2101A4F0F430042BC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Bala_hello_world" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="FqW-y0-dVN"/>
+                        <viewControllerLayoutGuide type="bottom" id="SH4-u3-iaz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZm-6m-5wc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Recorder">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Wu-e4-n4K"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg9-i2-jnn">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.21520692181144921" green="0.14091082625094142" blue="0.37968542220744683" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrf-tV-g32">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stopRecorder">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStopRecorder:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="weS-Dd-hW5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23240100256966356" green="0.63122203124646215" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bg9-i2-jnn" secondAttribute="centerX" constant="-0.5" id="3fB-di-RLm"/>
+                            <constraint firstItem="Qrf-tV-g32" firstAttribute="centerX" secondItem="bg9-i2-jnn" secondAttribute="centerX" id="Jzf-jp-KWp"/>
+                            <constraint firstItem="NZm-6m-5wc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SOq-sN-ypf">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="SH4-u3-iaz" firstAttribute="top" secondItem="Qrf-tV-g32" secondAttribute="bottom" constant="20" id="Wpf-oE-3Na"/>
+                            <constraint firstItem="NZm-6m-5wc" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="ilX-oS-I1z"/>
+                            <constraint firstItem="bg9-i2-jnn" firstAttribute="top" secondItem="NZm-6m-5wc" secondAttribute="bottom" constant="13" id="nOw-9T-snc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NZm-6m-5wc"/>
+                                <exclude reference="bg9-i2-jnn"/>
+                                <exclude reference="Qrf-tV-g32"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SOq-sN-ypf"/>
+                                <exclude reference="ilX-oS-I1z"/>
+                                <exclude reference="3fB-di-RLm"/>
+                                <exclude reference="nOw-9T-snc"/>
+                                <exclude reference="Jzf-jp-KWp"/>
+                                <exclude reference="Wpf-oE-3Na"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NZm-6m-5wc"/>
+                                <include reference="bg9-i2-jnn"/>
+                                <include reference="Qrf-tV-g32"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SOq-sN-ypf"/>
+                                <include reference="ilX-oS-I1z"/>
+                                <include reference="3fB-di-RLm"/>
+                                <include reference="nOw-9T-snc"/>
+                                <include reference="Jzf-jp-KWp"/>
+                                <include reference="Wpf-oE-3Na"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="bg9-i2-jnn" id="ybV-ha-3jW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="438" y="364"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Recorder" width="100" height="100"/>
+        <image name="stopRecorder" width="50" height="50"/>
+    </resources>
 </document>
